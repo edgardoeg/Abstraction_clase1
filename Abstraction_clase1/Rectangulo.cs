@@ -1,19 +1,20 @@
 ﻿
+
 namespace Abstraction_clase1
 {
-    public class Circulo : Figura
+    public class Rectangulo : Figura
     {
-        public double Radio;
+        public double Base;
+        public double Altura;
 
         public override double Area()
         {
-            return Math.PI * Math.Pow(Radio, 2);
-            
+            return Base * Altura;
         }
 
         public override double Perimetro()
         {
-            return 2 * Math.PI * Radio;
+            return 2 + (Base * Altura);
         }
     }
 }
